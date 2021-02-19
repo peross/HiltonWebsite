@@ -112,6 +112,12 @@ header .navigation li a:hover{
     color: #fff;
 }
 
+.banner .content h3{
+    font-size: 2em;
+    font-weight: 400;
+    color: #fff;
+}
+
 .banner .content p{
     font-size: 1em;
     color: #fff;
@@ -158,7 +164,19 @@ section{
     font-weight: 300;
 }
 
+.title-text-rev{
+    color: #111;
+    font-size: 2em;
+    font-weight: 300;
+}
+
 .title-text span{
+    color: #ff0157;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.title-text-rev span{
     color: #ff0157;
     font-weight: 700;
     font-size: 1.5em;
@@ -388,6 +406,10 @@ section{
     cursor: pointer;
 }
 
+.contact-form .input-box input[type="submit"]:hover{
+    letter-spacing: 4px;
+}
+
 /* ========== Copyright section ========== */
 
 .copyright-text{
@@ -516,8 +538,18 @@ section{
         font-size: 1.7em;
         line-height: 1.4em;
         margin-bottom: 15px;
+        margin-top: 30px;
         font-weight: 300;
     }
+
+    .title-text-rev{
+        font-size: 1.7em;
+        line-height: 1.4em;
+        margin-bottom: 15px;
+        margin-top: 30px;
+        font-weight: 300;
+    }
+
     .testimonials .content .box {
         margin: 10px;
         padding: 20px;

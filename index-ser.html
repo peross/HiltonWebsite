@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lightbox.css">
 
     <title>Hilton</title>
 </head>
@@ -19,22 +20,23 @@
         <li><a href="#banner" onclick="toggleMenu();">Naslovna</a></li>
         <li><a href="#about" onclick="toggleMenu();">O nama</a></li>
         <li><a href="#menu" onclick="toggleMenu();">Meni</a></li>
-        <li><a href="#expert" onclick="toggleMenu();">Kuhinja</a></li>
-        <li><a href="#testimonials" onclick="toggleMenu();">Korisnici</a></li>
+        <li><a href="#expert" onclick="toggleMenu();">Promocije</a></li>
+        <li><a href="#testimonials" onclick="toggleMenu();">Utisci</a></li>
+        <li><a href="#offers" onclick="toggleMenu();">Ponude</a></li>
         <li><a href="#contact" onclick="toggleMenu();">Kontakt</a></li>
-        <a href="index-ser.html"><img class="img-lang-ser" src="img/serlang.svg" alt="Serbian"></a>
+        <a href="index-ser.html">
+            <img class="img-lang-ser" src="img/serlang.svg" alt="Serbian">
+        </a>
         <a href="index.html"><img class="img-lang-en" src="img/engflag.svg" alt="English"></a>
     </ul>
 
 </header>
-
 <section class="banner" id="banner">
     <div class="content">
-        <h2>Uvijek izaberi najbolje</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae
-            consectetur cumque dicta ea, eius eligendi eveniet facere hic neque
-            quam quis quisquam reiciendis.</p>
-        <a href="#" class="btn">Pogedaj meni</a>
+        <h2>Uvijek birajte najbolje</h2>
+        <h3>Restoran Hilton</h3>
+        <p>Vojvode Stepe 13, Mrkonjić Grad</p>
+        <a href="#menu " class="btn">Meni</a>
     </div>
 </section>
 
@@ -42,16 +44,13 @@
     <div class="row">
         <div class="col50">
             <h2 class="title-text"><span>O</span> nama</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Atque autem cumque delectus eius eveniet mollitia natus neque
-                officiis reiciendis velit? Eaque enim illo tempore veniam? Nemo
-                neque optio placeat sunt!<br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Atque autem cumque delectus eius eveniet mollitia natus neque
-                officiis reiciendis velit? Eaque enim illo tempore veniam? Nemo
-                neque optio placeat sunt!<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Atque autem cumque delectus eius eveniet mollitia natus neque
-                officiis reiciendis velit? Eaque enim illo tempore veniam? Nemo
-                neque optio placeat sunt!</p>
+            <p>Restoran "Hilton" nalazi se u ulici Vojvode Stepe broj 13.<br><br>
+                Vrata su širom otvorena i putnicima namjernicima i onima koji su znatiželjni,
+                pa svrate po prvi put. <br><br>
+                Ovdje možete uživati u velikom izboru nacionalnih jela i specijaliteta,
+                uključujući svinjetinu i jagnjetinju na ražnju, valjanu teleću pečenku,
+                veliki izbor kuhanih jela, jela sa roštilja, kao i bogat izbor ribljih specijaliteta.
+            </p>
         </div>
         <div class="col50">
             <div class="imgBox">
@@ -63,52 +62,52 @@
 
 <section class="menu" id="menu">
     <div class="title">
-        <h2 class="title-text">Our <span>M</span>enu</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <h2 class="title-text"><span>M</span>eni</h2>
+        <p>Restoran nudi širok izbor domaćih jela, kao i jela sa roštilja.</p>
     </div>
     <div class="content">
         <div class="box">
             <div class="imgBox">
-                <img src="img/menu1.jpg" alt="">
+                <img src="img/biftek.jpg" alt="">
             </div>
             <div class="text">
-                <h3>Special Salads</h3>
+                <h3>Biftek</h3>
             </div>
         </div>
 
         <div class="box">
             <div class="imgBox">
-                <img src="img/menu2.jpg" alt="">
+                <img src="img/palacinke.jpg" alt="">
             </div>
             <div class="text">
-                <h3>Special Soup</h3>
+                <h3>Palačinke</h3>
             </div>
         </div>
 
         <div class="box">
             <div class="imgBox">
-                <img src="img/menu3.jpg" alt="">
+                <img src="img/piletina.jpg" alt="">
             </div>
             <div class="text">
-                <h3>Special Pasta</h3>
+                <h3>Piletina</h3>
             </div>
         </div>
 
         <div class="box">
             <div class="imgBox">
-                <img src="img/menu4.jpg" alt="">
+                <img src="img/rizoto.jpg" alt="">
             </div>
             <div class="text">
-                <h3>Special Salads</h3>
+                <h3>Rižoto</h3>
             </div>
         </div>
 
         <div class="box">
             <div class="imgBox">
-                <img src="img/menu5.jpg" alt="">
+                <img src="img/tortilja.jpg" alt="">
             </div>
             <div class="text">
-                <h3>Special Soup</h3>
+                <h3>Tortilja</h3>
             </div>
         </div>
 
@@ -117,64 +116,55 @@
                 <img src="img/menu6.jpg" alt="">
             </div>
             <div class="text">
-                <h3>Special Salads</h3>
+                <h3>Salate</h3>
             </div>
         </div>
     </div>
 
     <div class="title">
-        <a href="#" class="btn">View All</a>
+        <a href="img/gallery/1.jpg" data-lightbox="mygallery" class="btn">Vidi sve</a>
+        <a href="img/gallery/2.jpg" data-lightbox="mygallery" class="gallery"></a>
+        <a href="img/gallery/3.jpg" data-lightbox="mygallery" class="gallery"></a>
+        <a href="img/gallery/4.jpg" data-lightbox="mygallery" class="gallery"></a>
+        <a href="img/gallery/5.jpg" data-lightbox="mygallery" class="gallery"></a>
+        <a href="img/gallery/6.jpg" data-lightbox="mygallery" class="gallery"></a>
+        <a href="img/gallery/7.jpg" data-lightbox="mygallery" class="gallery"></a>
+        <a href="img/gallery/8.jpg" data-lightbox="mygallery" class="gallery"></a>
+        <a href="img/gallery/9.jpg" data-lightbox="mygallery" class="gallery"></a>
+        <a href="img/gallery/10.jpg" data-lightbox="mygallery" class="gallery"></a>
+        <a href="img/gallery/11.jpg" data-lightbox="mygallery" class="gallery"></a>
+        <a href="img/gallery/12.jpg" data-lightbox="mygallery" class="gallery"></a>
+        <a href="img/gallery/13.jpg" data-lightbox="mygallery" class="gallery"></a>
     </div>
 </section>
 
 <section class="expert" id="expert">
-    <div class="title">
-        <h2 class="title-text">Our Kitchen <span>E</span>xperts</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-    </div>
-    <div class="content">
-        <div class="box">
+    <div class="row">
+        <div class="col50">
             <div class="imgBox">
-                <img src="img/expert1.jpg" alt="">
-            </div>
-            <div class="text">
-                <h3>Someone Famous</h3>
+                <img src="img/1-1.jpg" alt="">
             </div>
         </div>
 
-        <div class="box">
-            <div class="imgBox">
-                <img src="img/expert2.jpg" alt="">
-            </div>
-            <div class="text">
-                <h3>Someone Famous</h3>
-            </div>
+        <div class="col50">
+            <h2 class="title-text-rev">Aktuelne <span>P</span>romocije</h2>
+            <p>Restoran "Hilton" <br>
+                nudi širok izbor domaćih jela, kao i jela sa roštilja.
+                Dođite i probajte specijalitete tradicionalne domaće trpeze.
+                Ove sedmice za vas smo pripremili posebnu ponudu. Dobrodošli!<br><br>
+                1. Čorbast pasulj, salata, hleb – 350 dinara <br>
+                2. Supa, ćevapi, salata, hleb – 400 dinara <br>
+                3. Supa, pljeskavica, salata, hleb – 400 dinara <br>
+                4. Supa, pileća bečka, salata, hleb – 400 dinara <br>
+            </p>
         </div>
 
-        <div class="box">
-            <div class="imgBox">
-                <img src="img/expert3.jpg" alt="">
-            </div>
-            <div class="text">
-                <h3>Someone Famous</h3>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="imgBox">
-                <img src="img/expert4.jpg" alt="">
-            </div>
-            <div class="text">
-                <h3>Someone Famous</h3>
-            </div>
-        </div>
     </div>
 </section>
 
 <section class="testimonials" id="testimonials">
     <div class="title white">
-        <h2 class="title-text">They <span>S</span>aid About Us</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <h2 class="title-text"><span>U</span>tisci korisnika</h2>
     </div>
 
     <div class="content">
@@ -183,11 +173,9 @@
                 <img src="img/testi1.jpg" alt="">
             </div>
             <div class="text">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Consequatur dolore inventore iure libero tempora velit vitae?
-                    Adipisci aut dolores, est facere harum numquam officia pariatur
-                    praesentium quibusdam sequi ut velit.</p>
-                <h3>Someone Famous</h3>
+                <p>Fenomenalan restoran !!! Sve je ukusno i kvalitetno, a vrlo pristojne cijene.
+                    Usluga je odlična i zaista je preporučujem.</p>
+                <h3>Andjela</h3>
             </div>
         </div>
 
@@ -196,11 +184,9 @@
                 <img src="img/testi2.jpg" alt="">
             </div>
             <div class="text">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Consequatur dolore inventore iure libero tempora velit vitae?
-                    Adipisci aut dolores, est facere harum numquam officia pariatur
-                    praesentium quibusdam sequi ut velit.</p>
-                <h3>Someone Famous</h3>
+                <p>U ovom restoranu hrana ima originalan ukus. Brizle su za svaku preporuku i treba ih probati,
+                    a palačinke sa pekmezom od šljiva posebna su priča.</p>
+                <h3>Srdjan</h3>
             </div>
         </div>
 
@@ -209,11 +195,28 @@
                 <img src="img/testi3.jpg" alt="">
             </div>
             <div class="text">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Consequatur dolore inventore iure libero tempora velit vitae?
-                    Adipisci aut dolores, est facere harum numquam officia pariatur
-                    praesentium quibusdam sequi ut velit.</p>
-                <h3>Someone Famous</h3>
+                <p>Odličan restoran. Domaća hrana je izvrsna, cijene su najniže u gradu.
+                    Ljubazno osoblje. Opušteno mjesto, odlična hrana, savršena usluga.</p>
+                <h3>Satisfied Guest</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="offers" id="offers">
+    <div class="row">
+        <div class="col50">
+            <h2 class="title-text">Ponude za <span>F</span>irme</h2>
+            <p>Hilton takođe nudi, posebno osmišljenu ponudu za sve
+                kompanije koje na ovaj način žele riješiti problem ishrane zaposlenih.
+                Posebnost ugostiteljstva je svakodnevno pružanje obroka zaposlenima. <br><br>
+                Nudimo jelovnike prilagođene svim profilima, a ako želite, možemo definirati
+                jelovnik po vašem izboru i tako u potpunosti zadovoljiti vaše afinitete,
+                a sve po izuzetno povoljnim cijenama.</p>
+        </div>
+        <div class="col50">
+            <div class="imgBox">
+                <img src="img/5-1.jpg" alt="">
             </div>
         </div>
     </div>
@@ -221,22 +224,24 @@
 
 <section class="contact" id="contact">
     <div class="title">
-        <h2 class="title-text"><span>C</span>ontact Us</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <h2 class="title-text"><span>K</span>ontaktirajte nas</h2>
+        <p>Restoran "Hilton" nalazi se u Mrkonjić Gradu u ulici Vojvode Stepe br. 13. <br>
+            Vrata su širom otvorena i putnicima namjernicima i onima koji su znatiželjni,
+            pa svrate po prvi put.</p>
     </div>
     <div class="contact-form">
-        <h3>Send Message</h3>
+        <h3>Pošaljite poruku</h3>
         <div class="input-box">
-            <input type="text" placeholder="Name">
+            <input type="text" placeholder="Ime">
         </div>
         <div class="input-box">
             <input type="text" placeholder="Email">
         </div>
         <div class="input-box">
-            <textarea placeholder="Your Message"></textarea>
+            <textarea placeholder="Vaša poruka"></textarea>
         </div>
         <div class="input-box">
-            <input type="submit" value="Send">
+            <input type="submit" value="Pošalji">
         </div>
     </div>
 </section>
@@ -246,6 +251,7 @@
 </div>
 
 <script src="js/main.js"></script>
+<script src="js/lightbox-plus-jquery.js"></script>
 
 </body>
 </html>
